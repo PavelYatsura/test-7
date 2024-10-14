@@ -50,6 +50,9 @@ export default function ComparisonImage({ data }) {
       window.removeEventListener("touchmove", slideMove);
     };
   }, [canStart]);
+
+
+
   return (
     <div>
       <div className="images">
