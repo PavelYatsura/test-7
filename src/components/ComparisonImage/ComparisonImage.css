@@ -1,0 +1,44 @@
+.images {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.images__img {
+  height: 150px;
+}
+.ComparisonImage{
+  display: flex;
+  justify-content: center;
+}
+
+.ComparisonImage__wrapper {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+}
+
+.ComparisonImage__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  overflow: hidden;
+  border-right: 1px solid #c4c4c4;
+}
+.ComparisonImage__slider {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #727272;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: ew-resize;
+} 
