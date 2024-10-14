@@ -6,11 +6,11 @@ export default function Header() {
   return (
     <header>
       <nav className="nav">
-        <Link to="/" className="nav__title">
+        <Link to="/test-7" className="nav__title">
           <h1 className="nav__title">НАДЕЖДА ЯЦУРА</h1>
         </Link>
         <div>
-          <NavLink to="/" className="nav__link">
+          <NavLink to="/test-7" className="nav__link">
             Работы
           </NavLink>
           <NavLink to="/personal" className="nav__link">
