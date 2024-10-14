@@ -4,7 +4,7 @@ import "./About.css";
 export default function About() {
   return (
     <>
-      <div className="container about">
+      <div className="about">
         <div className="about__wrapper">
           <img className="about__img" src={ABOUT.src} />
           <div>

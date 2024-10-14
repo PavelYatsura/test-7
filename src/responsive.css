@@ -1,14 +1,25 @@
+@media (max-width: 1440px) {
+  .single__img {
+    height: 225px;
+  }
+  .images__img {
+    height: 125px;
+  }
+  .ComparisonImage__img {
+    height: 700px;
+  }
+  .ComparisonImage__overlay{
+    height: 700px;
+  }
+}
+
 @media (max-width: 1350px) {
-    .nav {
-        
-        padding: 0 100px;
-        
-      }
+  .nav {
+    padding: 0 100px;
+  }
 }
 @media (max-width: 1100px) {
-    .nav {
-        
-        padding: 0 50px;
-        
-      }
+  .nav {
+    padding: 0 50px;
+  }
 }
