@@ -61,6 +61,9 @@
   .slider__fullScreenImage {
     max-height: 607px;
   }
+  .imageslider__slide {
+    height: 678px;
+  }
 }
 
 @media (max-width: 486px) {
@@ -109,6 +112,9 @@
   }
   .slider__fullScreenImage {
     max-height: 200px;
+  }
+  .imageslider__slide {
+    height: 372px;
   }
 }
 @media (max-width: 375px) {
