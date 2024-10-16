@@ -27,26 +27,26 @@ export default function LightBox({ data }) {
       {openModal && (
         <div className="lightbox__slider slider ">
           <a
-            className="btn slider__btn slider__btn_prev "
+            className="slider__btn slider__btn_prev "
             onClick={handelClickBack}
           >
             &#10094;
           </a>
-          <span className="slider__close" onClick={handelClickClose}>
-            &times;
-          </span>
-          <div className="slider__content content">
             <img
-              className="content__fullScreenImage"
+              className="slider__fullScreenImage"
               src={data[slideNumber].src}
             />
+          <div className="slider__wrapper">
+            <span className="slider__close" onClick={handelClickClose}>
+              &times;
+            </span>
+            <a
+              className=" slider__btn slider__btn_next"
+              onClick={handelClickNext}
+            >
+              &#10095;
+            </a>
           </div>
-          <a
-            className="btn slider__btn slider__btn_next"
-            onClick={handelClickNext}
-          >
-            &#10095;
-          </a>
         </div>
       )}
       <div className="lightbox__gallery gallery">

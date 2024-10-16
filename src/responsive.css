@@ -11,8 +11,7 @@
   .ComparisonImage__overlay {
     height: 700px;
   }
-
-  .work__a {
+  .imageslider__slide {
     height: 700px;
   }
 }
@@ -28,12 +27,18 @@
   .single__img {
     height: 217px;
   }
+  .slider__fullScreenImage {
+    max-height: 787px;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .nav {
     display: block;
     height: 80px;
   }
+}
+
+@media (max-width: 768px) {
   .personal {
     padding-left: 7%;
   }
@@ -47,9 +52,18 @@
   .about__wrapper {
     padding: 0 1%;
   }
+  .slider {
+    transform: rotate(90deg) scale(1.1);
+  }
+  .slider__wrapper {
+    height: 85%;
+  }
+  .slider__fullScreenImage {
+    max-height: 607px;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 486px) {
   .nav {
     height: 110px;
     padding: 0 3%;
@@ -62,9 +76,7 @@
   .nav__title {
     font-size: 33px;
   }
-  .work__a {
-    height: 480px;
-  }
+
   .single__img {
     height: 248px;
   }
@@ -87,6 +99,16 @@
   }
   .about__text {
     font-size: 16px;
+  }
+  .slider {
+    transform: rotate(90deg) scale(2);
+  }
+  .slider__wrapper {
+    height: 28%;
+    grid-template-rows: 1fr 2fr;
+  }
+  .slider__fullScreenImage {
+    max-height: 200px;
   }
 }
 @media (max-width: 375px) {
