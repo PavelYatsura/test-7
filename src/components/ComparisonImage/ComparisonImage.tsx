@@ -51,23 +51,22 @@ export default function ComparisonImage({ data }) {
     };
   }, [canStart]);
 
-
-
   return (
     <div>
-      <div className="images">
-        {data.map((item, index) => {
-          return (
-            <img
-              className="images__img"
-              key={index}
-              src={item.srcBefore}
-              onClick={() => imgIndex(index)}
-            />
-          );
-        })}
-      </div>
       <div className="ComparisonImage">
+        <div className="images">
+          {data.map((item, index) => {
+            return (
+              <img
+                className="images__img"
+                key={index}
+                src={item.srcBefore}
+                onClick={() => imgIndex(index)}
+              />
+            );
+          })}
+        </div>
+
         <div className="ComparisonImage__wrapper">
           <div>
             <img

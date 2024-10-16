@@ -3,23 +3,120 @@
     height: 225px;
   }
   .images__img {
-    height: 125px;
+    width: 120px;
   }
   .ComparisonImage__img {
     height: 700px;
   }
-  .ComparisonImage__overlay{
+  .ComparisonImage__overlay {
+    height: 700px;
+  }
+
+  .work__a {
     height: 700px;
   }
 }
 
-@media (max-width: 1350px) {
-  .nav {
-    padding: 0 100px;
+@media (max-width: 1024px) {
+  .about__img {
+    height: 602px;
+    margin-right: 35px;
+  }
+  .ComparisonImage {
+    width: 81%;
+  }
+  .single__img {
+    height: 217px;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 768px) {
   .nav {
-    padding: 0 50px;
+    display: block;
+    height: 80px;
+  }
+  .personal {
+    padding-left: 7%;
+  }
+  .about__img {
+    height: 502px;
+    margin-right: 10px;
+  }
+  .about__text {
+    font-size: 20px;
+  }
+  .about__wrapper {
+    padding: 0 1%;
+  }
+}
+
+@media (max-width: 425px) {
+  .nav {
+    height: 110px;
+    padding: 0 3%;
+  }
+  .nav__link {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 22px;
+  }
+  .nav__title {
+    font-size: 33px;
+  }
+  .work__a {
+    height: 480px;
+  }
+  .single__img {
+    height: 248px;
+  }
+  .ComparisonImage__img {
+    height: 528px;
+  }
+  .ComparisonImage__overlay {
+    height: 528px;
+  }
+  .images {
+    display: none;
+  }
+  .retouch {
+    padding: 0 3%;
+  }
+  .about__wrapper {
+    display: block;
+    padding: 0 3%;
+    margin-bottom: 30px;
+  }
+  .about__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .about__img {
+    height: 446px;
+    margin-right: 0;
+  }
+  .nav__title {
+    font-size: 31px;
+  }
+  .about__text {
+    font-size: 14px;
+  }
+  .nav {
+    margin-bottom: 10px;
+  }
+  .nav__link {
+    font-size: 18px;
+    margin-right: 15px;
+  }
+  .ComparisonImage__img {
+    height: 475px;
+  }
+  .ComparisonImage__overlay {
+    height: 475px;
+  }
+  .single__img {
+    height: 217px;
+  }
+  .work__a {
+    height: 450px;
   }
 }

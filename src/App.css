@@ -14,11 +14,7 @@
   grid-template-rows: auto 1fr auto;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 20px;
-  width: 100%;
-}
+
 
 .btn {
   cursor: pointer;

@@ -1,4 +1,5 @@
-.personal{
+.personal {
   display: flex;
   justify-content: center;
+  padding-left: 1%;
 }
