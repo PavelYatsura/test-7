@@ -84,7 +84,7 @@ export default function ComparisonImage({ data }) {
           <span
             className="ComparisonImage__slider"
             onMouseDown={slideStart}
-            onTouchStart={slideStart}
+            onTouchMove={slideStart}
             ref={sliderRef}
           ></span>
         </div>

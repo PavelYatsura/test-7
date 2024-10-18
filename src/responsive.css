@@ -67,18 +67,7 @@
 }
 
 @media (max-width: 486px) {
-  .nav {
-    height: 110px;
-    padding: 0 3%;
-  }
-  .nav__link {
-    display: inline-block;
-    font-size: 20px;
-    margin-right: 22px;
-  }
-  .nav__title {
-    font-size: 33px;
-  }
+  
 
   .single__img {
     height: 248px;
@@ -113,9 +102,7 @@
   .slider__fullScreenImage {
     max-height: 200px;
   }
-  .imageslider__slide {
-    height: 372px;
-  }
+  
 }
 @media (max-width: 375px) {
   .about__img {

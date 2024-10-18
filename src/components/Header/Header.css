@@ -33,3 +33,20 @@
 .nav__title:hover {
   cursor: pointer;
 }
+
+@media (max-width: 486px) {
+  .nav {
+    height: 110px;
+    padding: 0 3%;
+  }
+  .nav__link {
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 22px;
+  }
+  .nav__title {
+    font-size: 33px;
+    text-align: center;
+  }
+  
+}
