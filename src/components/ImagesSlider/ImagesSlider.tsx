@@ -12,9 +12,6 @@ export default function ImagesSlider({ data }) {
     setSlide(slide === 0 ? data.length - 1 : slide - 1);
   };
 
-
-  
-  
   return (
     <div className="container imageslider">
       <div className="imageslider__wrapper">
@@ -24,20 +21,23 @@ export default function ImagesSlider({ data }) {
         >
           &#10094;
         </a>
+        
+        <div className="imageslider__image-wrapper">
+          {data.map((item, idx) => (
+            <img
+              key={idx}
+              src={item.src}
+              alt={item.alt}
+              className={
+                slide === idx
+                  ? "imageslider__slide"
+                  : "imageslider__slide_hidden"
+              }
+            ></img>
+          ))}
+        </div>
         <a className="touchprev" onTouchStart={prevSLide}></a>
         <a className="touchnext" onTouchStart={nextSLide}></a>
-        {data.map((item, idx) => (
-          <img
-            key={idx}
-            src={item.src}
-            alt={item.alt}
-            className={
-              slide === idx ? "imageslider__slide" : "imageslider__slide_hidden"
-            }
-            
-
-          ></img>
-        ))}
         <a
           className="btn imageslider__btn imageslider__btn_next "
           onClick={nextSLide}

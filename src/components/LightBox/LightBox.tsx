@@ -25,21 +25,23 @@ export default function LightBox({ data }) {
   return (
     <div className="lightbox">
       {openModal && (
-        <div className="lightbox__slider slider ">
-          <a
-            className="slider__btn slider__btn_prev "
-            onClick={handelClickBack}
-          >
-            &#10094;
-          </a>
+        <div className="lightbox__slider">
+          <span className="slider__close" onClick={handelClickClose}>
+            &times;
+          </span>
+          <div className="slider__wrapper">
+            <a
+              className="slider__btn slider__btn_prev "
+              onClick={handelClickBack}
+            >
+              &#10094;
+            </a>
             <img
               className="slider__fullScreenImage"
               src={data[slideNumber].src}
             />
-          <div className="slider__wrapper">
-            <span className="slider__close" onClick={handelClickClose}>
-              &times;
-            </span>
+            <a className="slider__touchprev" onTouchStart={handelClickBack}></a>
+            <a className="slider__touchnext" onTouchStart={handelClickNext}></a>
             <a
               className=" slider__btn slider__btn_next"
               onClick={handelClickNext}
@@ -49,17 +51,17 @@ export default function LightBox({ data }) {
           </div>
         </div>
       )}
-      <div className="lightbox__gallery gallery">
+      <div className="lightbox__gallery">
         {data &&
           data.map((slide, index) => {
             return (
               <div
-                className="gallery__single single"
+                className="lightbox__gallery-single"
                 key={index}
                 onClick={() => handelOpenModal(index)}
               >
                 <img
-                  className="single__img single__img_hover"
+                  className="lightbox__gallery-img lightbox__gallery-img_hover"
                   src={slide.src}
                 />
               </div>

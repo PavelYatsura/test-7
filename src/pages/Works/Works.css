@@ -26,6 +26,9 @@
   align-items: center;
   justify-content: center;
   transition: opacity 0.2s, visibility 0.2s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .work__description {
@@ -55,5 +58,10 @@
   .work__a:active .work__description_layer {
     visibility: visible;
     opacity: 1;
+  }
+}
+@media (max-width: 768) {
+  .work__description_layer {
+    display: none;
   }
 }
