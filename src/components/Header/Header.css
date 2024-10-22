@@ -38,15 +38,15 @@
 @media (max-width: 486px) {
   .nav {
     height: 110px;
-    padding: 0 3%;
+    padding: 0 1%;
   }
   .nav__link-wrapper {
     text-align: center;
   }
   .nav__link {
     display: inline-block;
-    font-size: 15px;
-    margin-right: 22px;
+    font-size: 14.5px;
+    margin-right: 20px;
   }
   .nav__title {
     font-size: 33px;
