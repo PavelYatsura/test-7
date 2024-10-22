@@ -159,7 +159,7 @@
 }
 @media (max-height: 425px) {
   .slider__fullScreenImage {
-    max-height: 410px;
+    max-height: 380px;
 }
 .slider__btn {
   display: none;
